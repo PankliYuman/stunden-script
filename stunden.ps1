@@ -1,4 +1,4 @@
-$pauseMinuten = 30
+$pauseMinuten = Read-Host "Bitte gib deine gewuenschte Pause in Minuten ein"
 $sollArbeitszeit = New-TimeSpan -Hours 7 -Minutes 54
 try {
     $ankunftszeit = [datetime]::ParseExact((Read-Host "Bitte Ankunftszeit eingeben (HH:mm, z.B. 07:30)"),"HH:mm",$null)
